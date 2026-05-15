@@ -1,0 +1,176 @@
+
+.herosec{
+    background-image: url("../../Assets/bg-panner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.herocontent{
+    padding: 40px;
+    margin: 20px 0;
+    text-align: center;
+    color: #fff;
+    width: 800px;
+}
+.herocontent h1{
+    font-size: 75px;
+}
+
+
+.homeabout{
+    padding: 60px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeabout .aboutleft{
+    padding: 30px;
+    margin: 10px 0;
+    width: 600px;
+}
+.aboutleft img{
+    width: 100%;
+}
+
+.homeabout .aboutright{
+    width: 600px;
+    padding: 30px;
+    margin: 10px 0;
+}
+
+.heading{
+    padding: 20px 5px;
+    margin: 10px 0;
+}
+
+.aboutbox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(240, 248, 255, 0.455);
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.aboutbox .icons{
+    padding: 10px;
+    color: greenyellow;
+    font-size: 45px;
+}
+.aboutbox .aboutcontent{
+    padding: 10px;
+}
+
+.charity{
+    padding: 60px 60px;
+    background-image: url('../../Assets/bg-banner1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.charity .charitycontent{
+    padding: 20px;
+    margin: 10px 0;
+    background-color: rgba(250, 235, 215, 0.053);
+}
+.charity .charitycontent h1{
+    font-size: 56px;
+    padding: 10px;
+}
+.charity .charitycontent p{
+    padding: 25px;
+}
+
+.homecontact{
+    padding: 80px 60px;
+    background-color: aliceblue;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.homecontact .homesubscribes{
+    background-color: #ffffff7a;
+    padding: 10px;
+    margin: 10px 0;
+    width: 500px;
+}
+.homecontact .homesubscribes h2{
+    padding: 10px;
+    font-weight: lighter;
+}
+
+.inputs{
+    padding: 10px 5px;
+    margin: 5px 0;
+    text-align: left;
+}
+.inputs input,.inputs textarea{
+    padding: 15px 5px;
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(18, 29, 1, 0.349);
+}
+.inputs p{
+    color: red;
+    font-size: 12px;
+    padding: 5px 5px;
+    background-color: rgba(255, 0, 0, 0.304);
+}
+
+.inputs.btn{
+    text-align: center;
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .herocontent h1{
+        font-size: 36px;
+    }
+    .herocontent{
+        width: inherit;
+        padding: 10px;
+    }
+
+    .homeabout{
+        padding: 60px 0;
+        display: block;
+    }
+
+    .homeabout .aboutleft,.homeabout .aboutright{
+        width: inherit;
+    }
+    .aboutbox{
+        display: block;
+        text-align: center;
+    }
+    .aboutleft img{
+        width: 100%;
+    }
+    .charity{
+        padding: 50px 0;
+    }
+    .charity .charitycontent h1{
+        font-size: 36px;
+    }
+    .charity .charitycontent p{
+        padding: 10px 0;
+    }
+    .homecontact{
+        padding: 50px 0;
+        display: block;
+    }
+    .homecontact .homesubscribes{
+        width: inherit;
+    }
+}

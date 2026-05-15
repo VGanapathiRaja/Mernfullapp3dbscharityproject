@@ -1,0 +1,71 @@
+header{
+    padding: 5px 30px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .logo i{
+    font-size: 36px;
+    font-weight: 600;
+    padding: 5px;
+    display: none;
+}
+header .logo img{
+    width: 100px;
+    padding: 10px;
+}
+
+header .menus ul li{
+    display: inline-block;
+    padding: 10px;
+    list-style-type: none;
+}
+header a {
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: 400;
+}
+header ul li:hover{
+    background-color: rgb(212, 231, 249);
+    transition: all .5s ease-in-out;
+}
+header ul li:hover a{
+    font-weight: 800;
+}
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px){
+    header{
+        display: block;
+        padding: inherit;
+        position: relative;
+    }
+
+    header .logo i{
+        display: block;
+    }
+    header .menus ul li{
+        display: block;
+    }
+    header .menus{
+        background-color: antiquewhite;
+        padding: 10px;
+        width: 100%;
+        position: absolute;
+        left: -100%;
+        top: 160px;
+    }
+    .donatebtn {
+        text-align: center;
+    }
+}
