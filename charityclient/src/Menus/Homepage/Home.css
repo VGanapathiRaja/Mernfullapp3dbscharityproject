@@ -93,7 +93,7 @@
     padding: 25px;
 }
 
-.homecontact{
+.homecontact,.homedonate,.homeconnect{
     padding: 80px 60px;
     background-color: aliceblue;
     text-align: center;
@@ -101,15 +101,31 @@
     justify-content: space-around;
     align-items: center;
 }
-.homecontact .homesubscribes{
+.homedonate{
+    background-color: antiquewhite;
+}
+
+.homecontact .homesubscribes,.homecontact .homecontacts{
     background-color: #ffffff7a;
     padding: 10px;
     margin: 10px 0;
     width: 500px;
 }
-.homecontact .homesubscribes h2{
+.formpart h2{
     padding: 10px;
     font-weight: lighter;
+}
+
+.homedonate .donateleft, .donateright{
+    width: 600px;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.homeconnect .connectleft, .homeconnect.connectright{
+     width: 600px;
+    padding: 20px;
+    margin: 10px 0;
 }
 
 .inputs{
@@ -132,6 +148,14 @@
 
 .inputs.btn{
     text-align: center;
+}
+
+.successmesages{
+    background-color: greenyellow;
+    color: #fff;
+    font-weight: 600;
+    padding: 5px;
+    transition: 0.5s;
 }
 @media (min-width: 320px) and (max-width: 480px){
     .herocontent h1{
@@ -166,11 +190,18 @@
     .charity .charitycontent p{
         padding: 10px 0;
     }
-    .homecontact{
+    .homecontact, 
+    .homedonate,
+    .homeconnect{
         padding: 50px 0;
         display: block;
     }
-    .homecontact .homesubscribes{
+    .homecontact .homesubscribes,
+    .homeconnect .connectleft, 
+    .homeconnect.connectright,
+    .homedonate .donateleft,
+    .homedonate .donateright{
         width: inherit;
     }
+    
 }
