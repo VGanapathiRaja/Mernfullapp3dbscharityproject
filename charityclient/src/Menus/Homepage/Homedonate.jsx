@@ -46,7 +46,8 @@ export default function Homedonate() {
             setSub({semail:"",smobile:""});
           }
           try{
-            await axios.post("http://localhost:4000/subscribdata",subscribe);
+            // await axios.post("http://localhost:4000/subscribdata",subscribe);
+            await axios.post("https://charityserverside.onrender.com//subscribdata",subscribe);
             alert("successfully subscribed...!")
           }
           catch(err){
