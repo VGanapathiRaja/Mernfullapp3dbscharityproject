@@ -2,6 +2,7 @@ import React from 'react'
 import subImg from '../../Assets/logo.png'
 import Donatebtn from '../../Components/Buttons/Donatebtn';
 import { useState } from 'react';
+import axios from 'axios'
 export default function Homeconnect() {
     const [contactData, setContactData] = useState({
         cname: "",
@@ -73,7 +74,7 @@ export default function Homeconnect() {
     };
 
     // Submit
-    const handleSubmit = (e) => {
+     const handleSubmit = async (e) => {
 
         e.preventDefault();
 
@@ -92,6 +93,18 @@ export default function Homeconnect() {
 
             setErrors({});
         }
+
+        try{
+            await axios.post("http://localhost:4040/connect",contactData);
+            alert("Data sented submitted...!");
+        }
+        catch(e){
+            if(e){
+                console.error("Data not sent db",e);
+                alert("Data not sent db or backend");
+            }
+        }
+
     };
 
   return (
